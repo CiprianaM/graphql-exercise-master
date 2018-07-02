@@ -1,11 +1,11 @@
 {
-  "name": "codeworks-graphql",
+  "name": "codeworks-graphql-master",
   "version": "1.0.0",
   "description": "A Codeworks exercise to train students",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "codeworksbcn/graphql"
+    "url": "codeworksbcn/graphql-master"
   },
   "author": "Codeworks",
   "license": "UNLICENSED",
