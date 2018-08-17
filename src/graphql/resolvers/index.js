@@ -2,14 +2,14 @@
 
 const query = require('./query.resolver');
 const mutation = require('./mutation.resolver');
-const world = require('./world-cup.resolver');
+const types = require('./types.resolver');
 
 const resolvers = {
   Query: {
     team: query.team,
     stadium: query.stadium,
-    channels: query.channels,
-    matches: query.matches,
+    channel: query.channel,
+    match: query.match,
     group: query.group,
     knockout: query.knockout
   },
@@ -17,13 +17,16 @@ const resolvers = {
     updateMatch: mutation.updateMatch
   },
   Match: {
-    home_team: world.get_home_team,
-    away_team: world.get_away_team,
-    stadium: world.get_stadium,
-    channels: world.get_channels,
+    home_team: types.get_home_team,
+    away_team: types.get_away_team,
+    stadium: types.get_stadium,
+    channels: types.get_channels,
   },
   Stadium: {
-    lastPlayed: world.get_lastPlayed
+    last_played: types.get_lastPlayed
+  },
+  Group: {
+    closing_match: types.closing_match
   }
 };
 

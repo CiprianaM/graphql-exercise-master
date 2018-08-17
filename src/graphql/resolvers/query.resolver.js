@@ -8,9 +8,9 @@ exports.team = () => db.teams;
 
 exports.stadium = () => db.stadiums;
 
-exports.channels = () => db.tvchannels;
+exports.channel = () => db.tvchannels;
 
-exports.matches = (_, args) => {
+exports.match = (_, args) => {
   const matches = reduceMatches(db.groups, db.knockout);
   return !args 
   ? matches 

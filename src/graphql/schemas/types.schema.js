@@ -16,7 +16,7 @@ module.exports = `
     lat: Float!
     lng: Float!
     image: String!
-    lastPlayed: Match
+    last_played: Match
   }
 
   type Group {
@@ -24,6 +24,7 @@ module.exports = `
     winner: Team!
     runnerup: Team!
     matches(name: Int): [Match]!
+    closing_match: Match
   }
 
   type Knockout {

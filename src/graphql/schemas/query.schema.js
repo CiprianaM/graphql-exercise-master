@@ -1,6 +1,6 @@
 module.exports = `
 type Query {
-    matches(
+    match(
       name: Int
       type: String
       home_team: Int
@@ -17,7 +17,7 @@ type Query {
       ): [Match]
     stadium: [Stadium]
     team: [Team]
-    channels: [Channel]
+    channel: [Channel]
     group(name: String): [Group]
     knockout(name: String): [Knockout]
   }

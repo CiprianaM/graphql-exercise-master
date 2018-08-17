@@ -20,4 +20,11 @@ exports.get_channels = match =>
 exports.get_lastPlayed = stadium =>
   reduceMatches(db.groups, db.knockout)
     .filter(match => match.stadium === stadium.id && match.finished)
-    .sort((a, b) => (a.date ? 1 : b.date ? -1 : 0))[0];
+    .sort((a, b) => (a.date < b.date ? 1 : a.date > b.date ? -1 : 0))[0];
+
+// Group type resolvers
+exports.closing_match = group => 
+  Object
+    .values(db.groups)
+    .find(currGroup => currGroup.name === group.name).matches
+    .sort((a, b) => (a.date < b.date ? 1 : a.date > b.date ? -1 : 0))[0];
