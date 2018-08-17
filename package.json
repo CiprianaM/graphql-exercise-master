@@ -1,16 +1,17 @@
 {
-  "name": "codeworks-graphql-master",
-  "version": "1.0.2",
+  "name": "codeworks-graphql-exercise-master",
+  "version": "1.1.0",
   "description": "A Codeworks exercise to train students",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "codeworksbcn/graphql-master"
+    "url": "codeworksbcn/graphql-exercise-master"
   },
   "author": "Codeworks",
   "license": "UNLICENSED",
   "private": true,
   "devDependencies": {
+    "core-js": "^2.5.7",
     "cz-changelog": "^1.0.1",
     "del": "^2.2.2",
     "eslint": "^3.5.0",
@@ -22,7 +23,12 @@
     "gulp-load-plugins": "^1.3.0",
     "gulp-replace": "^0.5.4",
     "gulp-stylelint": "^3.2.0",
+    "nodemon": "^1.18.3",
     "stylelint-config-standard": "^13.0.0"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
   },
   "config": {
     "commitizen": {
@@ -31,5 +37,9 @@
     "ghooks": {
       "pre-commit": "gulp lint"
     }
+  },
+  "dependencies": {
+    "apollo-server": "2.0.2",
+    "graphql": "0.13.2"
   }
 }
