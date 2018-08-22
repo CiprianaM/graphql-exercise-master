@@ -1,6 +1,6 @@
 'use strict';
 
-const db = require('../../../data/world-cup.json');
+const db = require('../../../../data/world-cup.json');
 const { reduceMatches } = require('../../helpers/helper');
 
 // Exports all the functions to resolve the required query

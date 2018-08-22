@@ -21,8 +21,6 @@ for some instructor help.
 
 1. Create a Koa server from scratch in the `/src` folder.
 2. Add graphQL into your sever by installing [apollo-server](https://www.apollographql.com/docs/apollo-server/servers/koa.html).
-It's important to set it up along with GraphiQL (with an i!) which will expose
-an in-browser IDE that will let you debug your queries.
 3. Define all types for your system
   - Team
   - Stadium

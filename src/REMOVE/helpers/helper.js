@@ -3,7 +3,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const JsonDb = path.join(__dirname, '../../data/world-cup.json');
+const JsonDb = path.join(__dirname, '../../../data/world-cup.json');
 
 exports.writeJSON = (data) => {
   fs.writeFile(JsonDb, JSON.stringify(data), (err) => {
