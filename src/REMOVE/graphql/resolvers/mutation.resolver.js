@@ -10,7 +10,7 @@ exports.updateMatch = (_, args) => {
   if (!match) {
     throw new Error(`Couldn't find match with name ${name}`);
   }
-  Object.keys(args).reduce((acc, arg) => {
+  Object.keys(args).forEach((arg) => {
     match[arg] = args[arg];
   });
   writeJSON(db);

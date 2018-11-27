@@ -21,7 +21,7 @@ In this exercise you’ll create a Koa server that exposes a GraphQL interface, 
     - Team
     - Stadium
     - Group
-    - Kickout
+    - Knockout
     - Match
 4. Modify your resolves so `Match` includes the following relations in a nested
     fashion:

@@ -48,7 +48,9 @@ gulp.task('dist', ['remove-solutions'], function () {
   const npmConfig = require('./package.json');
   npmConfig.name = removeMaster(npmConfig.name);
   npmConfig.repository.url = removeMaster(npmConfig.repository.url);
+  npmConfig.scripts['dev'] = 'nodemon src/index.js';
   npmConfig.scripts['precommit'] = 'gulp lint';
+  npmConfig.scripts['start'] = 'node src/index.js';
   fs.writeFileSync('dist/package.json', JSON.stringify(npmConfig, null, 2));
 
   const esLintConfig = require('./.eslintrc.json');

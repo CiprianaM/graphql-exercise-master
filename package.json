@@ -27,9 +27,9 @@
     "nodemon": "^1.18.3"
   },
   "scripts": {
-    "dev": "nodemon src/index.js",
+    "dev": "nodemon src/REMOVE/index.js",
     "precommit": "gulp lint",
-    "start": "node src/index.js"
+    "start": "node src/REMOVE/index.js"
   },
   "config": {
     "commitizen": {
