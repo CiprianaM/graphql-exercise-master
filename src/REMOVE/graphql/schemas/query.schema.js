@@ -14,6 +14,7 @@ type Query {
       stadium: Int
       channels: [Int]
       finished: Boolean
+      matchday: Int
       ): [Match]
     stadium: [Stadium]
     team: [Team]

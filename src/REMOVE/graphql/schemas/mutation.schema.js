@@ -14,6 +14,7 @@ type Mutation {
       stadium: Int
       channels: [Int]
       finished: Boolean
+      matchday: Int
       ): Match,
     updateScore(name: Int!): Match,
   }

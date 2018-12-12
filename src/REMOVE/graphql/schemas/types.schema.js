@@ -46,6 +46,7 @@ module.exports = `
     stadium: Stadium!
     channels: [Channel]!
     finished: Boolean!
+    matchday: Int
   }
 
   type Channel {
