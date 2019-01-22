@@ -1,6 +1,6 @@
 'use strict';
 
-const db = require('../../../../data/world-cup.json');
+const db = require('../db');
 const { reduceMatches, writeJSON } = require('../../helpers/helper');
 
 // Export the function to update the match type

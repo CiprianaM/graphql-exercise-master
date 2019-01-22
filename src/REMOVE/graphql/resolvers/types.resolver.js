@@ -1,6 +1,6 @@
 'use strict';
 
-const db = require('../../../../data/world-cup.json');
+const db = require('../db');
 const { reduceMatches } = require('../../helpers/helper');
 
 // Match type resolvers
