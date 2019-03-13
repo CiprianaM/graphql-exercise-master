@@ -18,15 +18,13 @@ module.exports.constructTestServer = constructTestServer;
 const GET_MATCHES = gql`
   query match {
     match{
-      name
+      id
       type
       home_team {
         id
-        name
       }
       away_team {
         id
-        name
       }
       home_result
       away_result
@@ -34,16 +32,13 @@ const GET_MATCHES = gql`
       away_penalty
       winner {
         id
-        name
       }
       date
       stadium {
         id
-        name
       }
       channels {
         id
-        name
       }
       finished
       matchday
@@ -61,12 +56,7 @@ const GET_STADIUMS = gql`
       lng
       image
       last_played {
-        name
-        type
-        home_team {
-          id
-          name
-        }
+        id
       }
     }
   }
@@ -105,20 +95,16 @@ const GET_GROUPS = gql`
       name
       winner {
         id
-        name
       }
       runnerup {
         id
-        name
       }
       matches {
-        name
-        type
+        id
       }
-     closing_match {
-      name
-      type
-    }
+      closing_match {
+        id
+      }
     }
   }
 `;
@@ -128,8 +114,7 @@ const GET_KNOCKOUTS = gql`
     knockout{
       name
       matches {
-        name
-        type
+        id
       }
     }
   }
