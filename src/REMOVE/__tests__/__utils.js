@@ -10,7 +10,7 @@ const constructTestServer = () => {
     typeDefs,
     resolvers
   });
-  return { server };
+  return server;
 };
 
 module.exports.constructTestServer = constructTestServer;

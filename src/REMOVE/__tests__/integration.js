@@ -4,7 +4,7 @@ const { GET_MATCHES, GET_STADIUMS, GET_TEAMS, GET_CHANNELS, GET_GROUPS, GET_KNOC
 
 
 describe('Queries', () => {
-  const { server } = constructTestServer();
+  const server = constructTestServer();
   const { query } = createTestClient(server);
   let res;
 
