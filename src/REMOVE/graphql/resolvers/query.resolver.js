@@ -8,8 +8,6 @@ exports.team = () => db.teams;
 
 exports.stadium = () => db.stadiums;
 
-exports.channel = () => db.tvchannels;
-
 exports.match = (_, args) =>
   reduceMatches(db.groups, db.knockout).filter((match) =>
     Object.keys(args).every((arg) => match[arg] === args[arg])

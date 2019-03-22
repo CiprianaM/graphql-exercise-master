@@ -1,0 +1,193 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Queries fetches list of channels 1`] = `
+Object {
+  "data": undefined,
+  "errors": Array [
+    [ValidationError: Cannot query field "channel" on type "Query".],
+  ],
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`Queries fetches list of groups 1`] = `
+Object {
+  "data": Object {
+    "group": Array [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+    ],
+  },
+  "errors": Array [
+    [GraphQLError: Cannot return null for non-nullable field Group.winner.],
+    [GraphQLError: Cannot return null for non-nullable field Group.winner.],
+    [GraphQLError: Cannot return null for non-nullable field Group.winner.],
+    [GraphQLError: Cannot return null for non-nullable field Group.winner.],
+    [GraphQLError: Cannot return null for non-nullable field Group.winner.],
+    [GraphQLError: Cannot return null for non-nullable field Group.winner.],
+    [GraphQLError: Cannot return null for non-nullable field Group.winner.],
+    [GraphQLError: Cannot return null for non-nullable field Group.winner.],
+  ],
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`Queries fetches list of knockout 1`] = `
+Object {
+  "data": Object {
+    "knockout": Array [
+      Object {
+        "matches": Array [
+          Object {
+            "id": 49,
+          },
+          Object {
+            "id": 50,
+          },
+          Object {
+            "id": 51,
+          },
+          Object {
+            "id": 52,
+          },
+          Object {
+            "id": 53,
+          },
+          Object {
+            "id": 54,
+          },
+          Object {
+            "id": 55,
+          },
+          Object {
+            "id": 56,
+          },
+        ],
+        "name": "Round of 16",
+      },
+      Object {
+        "matches": Array [
+          Object {
+            "id": 57,
+          },
+          Object {
+            "id": 58,
+          },
+          Object {
+            "id": 59,
+          },
+          Object {
+            "id": 60,
+          },
+        ],
+        "name": "Quarter-finals",
+      },
+      Object {
+        "matches": Array [
+          Object {
+            "id": 61,
+          },
+          Object {
+            "id": 62,
+          },
+        ],
+        "name": "Semi-finals",
+      },
+      Object {
+        "matches": Array [
+          Object {
+            "id": 63,
+          },
+        ],
+        "name": "Third place play-off",
+      },
+      Object {
+        "matches": Array [
+          Object {
+            "id": 64,
+          },
+        ],
+        "name": "Final",
+      },
+    ],
+  },
+  "errors": undefined,
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`Queries fetches list of matches 1`] = `
+Object {
+  "data": undefined,
+  "errors": Array [
+    [ValidationError: Field "home_team" must not have a selection since type "String" has no subfields.],
+    [ValidationError: Field "away_team" must not have a selection since type "String" has no subfields.],
+    [ValidationError: Cannot query field "home_result" on type "Match". Did you mean "home_team" or "home_team_id"?],
+    [ValidationError: Cannot query field "away_result" on type "Match". Did you mean "away_team" or "away_team_id"?],
+    [ValidationError: Cannot query field "home_penalty" on type "Match". Did you mean "home_team" or "home_team_id"?],
+    [ValidationError: Cannot query field "away_penalty" on type "Match". Did you mean "away_team" or "away_team_id"?],
+    [ValidationError: Cannot query field "winner" on type "Match".],
+    [ValidationError: Cannot query field "stadium" on type "Match". Did you mean "stadium_id"?],
+    [ValidationError: Cannot query field "channels" on type "Match".],
+  ],
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`Queries fetches list of stadiums 1`] = `
+Object {
+  "data": undefined,
+  "errors": Array [
+    [ValidationError: Cannot query field "lat" on type "Stadium".],
+    [ValidationError: Cannot query field "lng" on type "Stadium".],
+  ],
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`Queries fetches list of teams 1`] = `
+Object {
+  "data": undefined,
+  "errors": Array [
+    [ValidationError: Cannot query field "fifaCode" on type "Team".],
+    [ValidationError: Cannot query field "emojiString" on type "Team". Did you mean "emoji_string"?],
+  ],
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;

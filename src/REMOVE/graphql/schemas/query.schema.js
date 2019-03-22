@@ -1,24 +1,24 @@
 module.exports = `
 type Query {
     match(
-      name: Int
+      id: Int
       type: String
-      home_team: Int
-      away_team: Int
-      home_result: Int
-      away_result: Int
-      home_penalty: Int
-      away_penalty: Int
-      winner: Int
+      home_team_id: Int
+      away_team_id: Int
+      home_team: String
+      away_team: String
+      home_score: String
+      away_score: String
+      home_scorers: String
+      away_scorers: String
       date: String
-      stadium: Int
-      channels: [Int]
+      stadium_id: Int
+      time_elapsed: String
       finished: Boolean
       matchday: Int
       ): [Match]
     stadium: [Stadium]
     team: [Team]
-    channel: [Channel]
     group(name: String): [Group]
     knockout(name: String): [Knockout]
   }
