@@ -6,19 +6,19 @@ const types = require('./types.resolver');
 
 const resolvers = {
   Query: {
-    team: query.team,
-    stadium: query.stadium,
-    match: query.match,
-    group: query.group,
-    knockout: query.knockout
+    teams: query.team,
+    stadiums: query.stadium,
+    matches: query.match,
+    groups: query.group,
+    knockouts: query.knockout
   },
   Mutation: {
     updateMatch: mutation.updateMatch
   },
   Match: {
-    home_team_id: types.get_home_team,
-    away_team_id: types.get_away_team,
-    stadium_id: types.get_stadium,
+    home_team: types.get_home_team,
+    away_team: types.get_away_team,
+    stadium: types.get_stadium,
   },
   Stadium: {
     last_played: types.get_lastPlayed

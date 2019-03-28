@@ -1,6 +1,6 @@
 module.exports = `
-type Query {
-    match(
+  type Query {
+    matches(
       id: Int
       type: String
       home_team_id: Int
@@ -16,10 +16,10 @@ type Query {
       time_elapsed: String
       finished: Boolean
       matchday: Int
-      ): [Match]
-    stadium: [Stadium]
-    team: [Team]
-    group(name: String): [Group]
-    knockout(name: String): [Knockout]
+    ): [Match]!
+    stadiums: [Stadium]!
+    teams: [Team]!
+    groups(name: String): [Group]!
+    knockouts(name: String): [Knockout]!
   }
   `;

@@ -1,5 +1,5 @@
 module.exports = `
-type Mutation {
+  type Mutation {
     updateMatch(
       id: Int!
       type: String
@@ -16,6 +16,6 @@ type Mutation {
       time_elapsed: String
       finished: Boolean
       matchday: Int
-      ): Match
+    ): Match
   }
   `;
