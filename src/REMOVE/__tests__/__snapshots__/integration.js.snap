@@ -1,44 +1,236 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Queries fetches list of channels 1`] = `
-Object {
-  "data": undefined,
-  "errors": Array [
-    [ValidationError: Cannot query field "channel" on type "Query".],
-  ],
-  "extensions": undefined,
-  "http": Object {
-    "headers": Headers {
-      Symbol(map): Object {},
-    },
-  },
-}
-`;
-
 exports[`Queries fetches list of groups 1`] = `
 Object {
   "data": Object {
-    "group": Array [
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
+    "groups": Array [
+      Object {
+        "closing_match": Object {
+          "id": 34,
+        },
+        "matches": Array [
+          Object {
+            "id": 1,
+          },
+          Object {
+            "id": 2,
+          },
+          Object {
+            "id": 17,
+          },
+          Object {
+            "id": 18,
+          },
+          Object {
+            "id": 33,
+          },
+          Object {
+            "id": 34,
+          },
+        ],
+        "name": "Group A",
+        "runnerup": null,
+        "winner": null,
+      },
+      Object {
+        "closing_match": Object {
+          "id": 36,
+        },
+        "matches": Array [
+          Object {
+            "id": 3,
+          },
+          Object {
+            "id": 4,
+          },
+          Object {
+            "id": 19,
+          },
+          Object {
+            "id": 20,
+          },
+          Object {
+            "id": 35,
+          },
+          Object {
+            "id": 36,
+          },
+        ],
+        "name": "Group B",
+        "runnerup": null,
+        "winner": null,
+      },
+      Object {
+        "closing_match": Object {
+          "id": 38,
+        },
+        "matches": Array [
+          Object {
+            "id": 5,
+          },
+          Object {
+            "id": 6,
+          },
+          Object {
+            "id": 21,
+          },
+          Object {
+            "id": 22,
+          },
+          Object {
+            "id": 37,
+          },
+          Object {
+            "id": 38,
+          },
+        ],
+        "name": "Group C",
+        "runnerup": null,
+        "winner": null,
+      },
+      Object {
+        "closing_match": Object {
+          "id": 40,
+        },
+        "matches": Array [
+          Object {
+            "id": 7,
+          },
+          Object {
+            "id": 8,
+          },
+          Object {
+            "id": 23,
+          },
+          Object {
+            "id": 24,
+          },
+          Object {
+            "id": 39,
+          },
+          Object {
+            "id": 40,
+          },
+        ],
+        "name": "Group D",
+        "runnerup": null,
+        "winner": null,
+      },
+      Object {
+        "closing_match": Object {
+          "id": 42,
+        },
+        "matches": Array [
+          Object {
+            "id": 9,
+          },
+          Object {
+            "id": 10,
+          },
+          Object {
+            "id": 25,
+          },
+          Object {
+            "id": 26,
+          },
+          Object {
+            "id": 41,
+          },
+          Object {
+            "id": 42,
+          },
+        ],
+        "name": "Group E",
+        "runnerup": null,
+        "winner": null,
+      },
+      Object {
+        "closing_match": Object {
+          "id": 44,
+        },
+        "matches": Array [
+          Object {
+            "id": 11,
+          },
+          Object {
+            "id": 12,
+          },
+          Object {
+            "id": 27,
+          },
+          Object {
+            "id": 28,
+          },
+          Object {
+            "id": 43,
+          },
+          Object {
+            "id": 44,
+          },
+        ],
+        "name": "Group F",
+        "runnerup": null,
+        "winner": null,
+      },
+      Object {
+        "closing_match": Object {
+          "id": 46,
+        },
+        "matches": Array [
+          Object {
+            "id": 13,
+          },
+          Object {
+            "id": 14,
+          },
+          Object {
+            "id": 29,
+          },
+          Object {
+            "id": 30,
+          },
+          Object {
+            "id": 45,
+          },
+          Object {
+            "id": 46,
+          },
+        ],
+        "name": "Group G",
+        "runnerup": null,
+        "winner": null,
+      },
+      Object {
+        "closing_match": Object {
+          "id": 48,
+        },
+        "matches": Array [
+          Object {
+            "id": 15,
+          },
+          Object {
+            "id": 16,
+          },
+          Object {
+            "id": 31,
+          },
+          Object {
+            "id": 32,
+          },
+          Object {
+            "id": 47,
+          },
+          Object {
+            "id": 48,
+          },
+        ],
+        "name": "Group H",
+        "runnerup": null,
+        "winner": null,
+      },
     ],
   },
-  "errors": Array [
-    [GraphQLError: Cannot return null for non-nullable field Group.winner.],
-    [GraphQLError: Cannot return null for non-nullable field Group.winner.],
-    [GraphQLError: Cannot return null for non-nullable field Group.winner.],
-    [GraphQLError: Cannot return null for non-nullable field Group.winner.],
-    [GraphQLError: Cannot return null for non-nullable field Group.winner.],
-    [GraphQLError: Cannot return null for non-nullable field Group.winner.],
-    [GraphQLError: Cannot return null for non-nullable field Group.winner.],
-    [GraphQLError: Cannot return null for non-nullable field Group.winner.],
-  ],
+  "errors": undefined,
   "extensions": undefined,
   "http": Object {
     "headers": Headers {
@@ -51,7 +243,7 @@ Object {
 exports[`Queries fetches list of knockout 1`] = `
 Object {
   "data": Object {
-    "knockout": Array [
+    "knockouts": Array [
       Object {
         "matches": Array [
           Object {
@@ -139,18 +331,1483 @@ Object {
 
 exports[`Queries fetches list of matches 1`] = `
 Object {
-  "data": undefined,
-  "errors": Array [
-    [ValidationError: Field "home_team" must not have a selection since type "String" has no subfields.],
-    [ValidationError: Field "away_team" must not have a selection since type "String" has no subfields.],
-    [ValidationError: Cannot query field "home_result" on type "Match". Did you mean "home_team" or "home_team_id"?],
-    [ValidationError: Cannot query field "away_result" on type "Match". Did you mean "away_team" or "away_team_id"?],
-    [ValidationError: Cannot query field "home_penalty" on type "Match". Did you mean "home_team" or "home_team_id"?],
-    [ValidationError: Cannot query field "away_penalty" on type "Match". Did you mean "away_team" or "away_team_id"?],
-    [ValidationError: Cannot query field "winner" on type "Match".],
-    [ValidationError: Cannot query field "stadium" on type "Match". Did you mean "stadium_id"?],
-    [ValidationError: Cannot query field "channels" on type "Match".],
-  ],
+  "data": Object {
+    "matches": Array [
+      Object {
+        "away_score": "0",
+        "away_scorers": null,
+        "away_team": Object {
+          "id": 2,
+        },
+        "date": "2018-06-14T15:00:00+00:00",
+        "finished": true,
+        "home_score": "5",
+        "home_scorers": "A. Golovin 90'+4' D. Cheryshev 90'+1' A. Dzyuba 71' D. Cheryshev 43' Y. Gazinskiy 12' ",
+        "home_team": Object {
+          "id": 1,
+        },
+        "id": 1,
+        "loser": null,
+        "matchday": 1,
+        "stadium": Object {
+          "id": 1,
+        },
+        "time_elapsed": "Final",
+        "type": "group",
+        "winner": null,
+      },
+      Object {
+        "away_score": "1",
+        "away_scorers": "Giménez 89' ",
+        "away_team": Object {
+          "id": 4,
+        },
+        "date": "2018-06-15T12:00:00+00:00",
+        "finished": true,
+        "home_score": "0",
+        "home_scorers": null,
+        "home_team": Object {
+          "id": 3,
+        },
+        "id": 2,
+        "loser": null,
+        "matchday": 1,
+        "stadium": Object {
+          "id": 12,
+        },
+        "time_elapsed": "Final",
+        "type": "group",
+        "winner": null,
+      },
+      Object {
+        "away_score": "1",
+        "away_scorers": "Mohamed Salah 73' ",
+        "away_team": Object {
+          "id": 3,
+        },
+        "date": "2018-06-19T18:00:00+00:00",
+        "finished": true,
+        "home_score": "3",
+        "home_scorers": "A. Dzyuba 62' D. Cheryshev 59' Ahmed Fathy 47' ",
+        "home_team": Object {
+          "id": 1,
+        },
+        "id": 17,
+        "loser": null,
+        "matchday": 2,
+        "stadium": Object {
+          "id": 3,
+        },
+        "time_elapsed": "Final",
+        "type": "group",
+        "winner": null,
+      },
+      Object {
+        "away_score": "0",
+        "away_scorers": null,
+        "away_team": Object {
+          "id": 2,
+        },
+        "date": "2018-06-20T15:00:00+00:00",
+        "finished": true,
+        "home_score": "1",
+        "home_scorers": "Luis Suárez 23' ",
+        "home_team": Object {
+          "id": 4,
+        },
+        "id": 18,
+        "loser": null,
+        "matchday": 2,
+        "stadium": Object {
+          "id": 10,
+        },
+        "time_elapsed": "Final",
+        "type": "group",
+        "winner": null,
+      },
+      Object {
+        "away_score": "0",
+        "away_scorers": null,
+        "away_team": Object {
+          "id": 1,
+        },
+        "date": "2018-06-25T14:00:00+00:00",
+        "finished": true,
+        "home_score": "3",
+        "home_scorers": "E. Cavani 90' D. Cheryshev 23' Luis Suárez 10' ",
+        "home_team": Object {
+          "id": 4,
+        },
+        "id": 33,
+        "loser": null,
+        "matchday": 3,
+        "stadium": Object {
+          "id": 7,
+        },
+        "time_elapsed": "Final",
+        "type": "group",
+        "winner": null,
+      },
+      Object {
+        "away_score": "1",
+        "away_scorers": "Mohamed Salah 22' ",
+        "away_team": Object {
+          "id": 3,
+        },
+        "date": "2018-06-25T14:00:00+00:00",
+        "finished": true,
+        "home_score": "2",
+        "home_scorers": "Salem Al Dawsari 90'+5' Salman Al Faraj 45'+6' ",
+        "home_team": Object {
+          "id": 2,
+        },
+        "id": 34,
+        "loser": null,
+        "matchday": 3,
+        "stadium": Object {
+          "id": 8,
+        },
+        "time_elapsed": "Final",
+        "type": "group",
+        "winner": null,
+      },
+      Object {
+        "away_score": "3",
+        "away_scorers": "Nacho 58' Diego Costa 55' Diego Costa 24' ",
+        "away_team": Object {
+          "id": 6,
+        },
+        "date": "2018-06-15T18:00:00+00:00",
+        "finished": true,
+        "home_score": "3",
+        "home_scorers": "Cristiano Ronaldo 88' Cristiano Ronaldo 44' Cristiano Ronaldo 4' ",
+        "home_team": Object {
+          "id": 5,
+        },
+        "id": 3,
+        "loser": null,
+        "matchday": 1,
+        "stadium": Object {
+          "id": 11,
+        },
+        "time_elapsed": "Final",
+        "type": "group",
+        "winner": null,
+      },
+      Object {
+        "away_score": "1",
+        "away_scorers": "A. Bouhaddouz 90'+5' ",
+        "away_team": Object {
+          "id": 8,
+        },
+        "date": "2018-06-15T15:00:00+00:00",
+        "finished": true,
+        "home_score": "0",
+        "home_scorers": null,
+        "home_team": Object {
+          "id": 7,
+        },
+        "id": 4,
+        "loser": null,
+        "matchday": 1,
+        "stadium": Object {
+          "id": 3,
+        },
+        "time_elapsed": "Final",
+        "type": "group",
+        "winner": null,
+      },
+      Object {
+        "away_score": "0",
+        "away_scorers": null,
+        "away_team": Object {
+          "id": 7,
+        },
+        "date": "2018-06-20T12:00:00+00:00",
+        "finished": true,
+        "home_score": "1",
+        "home_scorers": "Cristiano Ronaldo 4' ",
+        "home_team": Object {
+          "id": 5,
+        },
+        "id": 19,
+        "loser": null,
+        "matchday": 2,
+        "stadium": Object {
+          "id": 1,
+        },
+        "time_elapsed": "Final",
+        "type": "group",
+        "winner": null,
+      },
+      Object {
+        "away_score": "1",
+        "away_scorers": "Diego Costa 54' ",
+        "away_team": Object {
+          "id": 6,
+        },
+        "date": "2018-06-20T18:00:00+00:00",
+        "finished": true,
+        "home_score": "0",
+        "home_scorers": null,
+        "home_team": Object {
+          "id": 8,
+        },
+        "id": 20,
+        "loser": null,
+        "matchday": 2,
+        "stadium": Object {
+          "id": 5,
+        },
+        "time_elapsed": "Final",
+        "type": "group",
+        "winner": null,
+      },
+      Object {
+        "away_score": "1",
+        "away_scorers": "Ricardo Quaresma 45' ",
+        "away_team": Object {
+          "id": 5,
+        },
+        "date": "2018-06-25T18:00:00+00:00",
+        "finished": true,
+        "home_score": "1",
+        "home_scorers": "K. Ansarifard 90'+3' ",
+        "home_team": Object {
+          "id": 8,
+        },
+        "id": 35,
+        "loser": null,
+        "matchday": 3,
+        "stadium": Object {
+          "id": 9,
+        },
+        "time_elapsed": "Final",
+        "type": "group",
+        "winner": null,
+      },
+      Object {
+        "away_score": "2",
+        "away_scorers": "Y. En-Nesyri 81' K. Boutaïb 14' ",
+        "away_team": Object {
+          "id": 7,
+        },
+        "date": "2018-06-25T18:00:00+00:00",
+        "finished": true,
+        "home_score": "2",
+        "home_scorers": "Iago Aspas 90'+1' Isco 19' ",
+        "home_team": Object {
+          "id": 6,
+        },
+        "id": 36,
+        "loser": null,
+        "matchday": 3,
+        "stadium": Object {
+          "id": 4,
+        },
+        "time_elapsed": "Final",
+        "type": "group",
+        "winner": null,
+      },
+      Object {
+        "away_score": "1",
+        "away_scorers": "Mile Jedinak 62' ",
+        "away_team": Object {
+          "id": 10,
+        },
+        "date": "2018-06-16T10:00:00+00:00",
+        "finished": true,
+        "home_score": "2",
+        "home_scorers": "A. Behich 80' A. Griezmann 58' ",
+        "home_team": Object {
+          "id": 9,
+        },
+        "id": 5,
+        "loser": null,
+        "matchday": 1,
+        "stadium": Object {
+          "id": 5,
+        },
+        "time_elapsed": "Final",
+        "type": "group",
+        "winner": null,
+      },
+      Object {
+        "away_score": "1",
+        "away_scorers": "Y. Poulsen 59' ",
+        "away_team": Object {
+          "id": 12,
+        },
+        "date": "2018-06-16T16:00:00+00:00",
+        "finished": true,
+        "home_score": "0",
+        "home_scorers": null,
+        "home_team": Object {
+          "id": 11,
+        },
+        "id": 6,
+        "loser": null,
+        "matchday": 1,
+        "stadium": Object {
+          "id": 9,
+        },
+        "time_elapsed": "Final",
+        "type": "group",
+        "winner": null,
+      },
+      Object {
+        "away_score": "0",
+        "away_scorers": null,
+        "away_team": Object {
+          "id": 11,
+        },
+        "date": "2018-06-21T15:00:00+00:00",
+        "finished": true,
+        "home_score": "1",
+        "home_scorers": "K. Mbappé 34' ",
+        "home_team": Object {
+          "id": 9,
+        },
+        "id": 21,
+        "loser": null,
+        "matchday": 2,
+        "stadium": Object {
+          "id": 12,
+        },
+        "time_elapsed": "Final",
+        "type": "group",
+        "winner": null,
+      },
+      Object {
+        "away_score": "1",
+        "away_scorers": "Mile Jedinak 38' ",
+        "away_team": Object {
+          "id": 10,
+        },
+        "date": "2018-06-21T12:00:00+00:00",
+        "finished": true,
+        "home_score": "1",
+        "home_scorers": "C. Eriksen 7' ",
+        "home_team": Object {
+          "id": 12,
+        },
+        "id": 22,
+        "loser": null,
+        "matchday": 2,
+        "stadium": Object {
+          "id": 7,
+        },
+        "time_elapsed": "Final",
+        "type": "group",
+        "winner": null,
+      },
+      Object {
+        "away_score": "0",
+        "away_scorers": null,
+        "away_team": Object {
+          "id": 9,
+        },
+        "date": "2018-06-26T14:00:00+00:00",
+        "finished": true,
+        "home_score": "0",
+        "home_scorers": null,
+        "home_team": Object {
+          "id": 12,
+        },
+        "id": 37,
+        "loser": null,
+        "matchday": 3,
+        "stadium": Object {
+          "id": 1,
+        },
+        "time_elapsed": "Final",
+        "type": "group",
+        "winner": null,
+      },
+      Object {
+        "away_score": "2",
+        "away_scorers": "Paolo Guerrero 50' A. Carrillo 18' ",
+        "away_team": Object {
+          "id": 11,
+        },
+        "date": "2018-06-26T14:00:00+00:00",
+        "finished": true,
+        "home_score": "0",
+        "home_scorers": null,
+        "home_team": Object {
+          "id": 10,
+        },
+        "id": 38,
+        "loser": null,
+        "matchday": 3,
+        "stadium": Object {
+          "id": 11,
+        },
+        "time_elapsed": "Final",
+        "type": "group",
+        "winner": null,
+      },
+      Object {
+        "away_score": "1",
+        "away_scorers": "Alfred Finnbogason 23' ",
+        "away_team": Object {
+          "id": 14,
+        },
+        "date": "2018-06-16T13:00:00+00:00",
+        "finished": true,
+        "home_score": "1",
+        "home_scorers": "S. Agüero 19' ",
+        "home_team": Object {
+          "id": 13,
+        },
+        "id": 7,
+        "loser": null,
+        "matchday": 1,
+        "stadium": Object {
+          "id": 2,
+        },
+        "time_elapsed": "Final",
+        "type": "group",
+        "winner": null,
+      },
+      Object {
+        "away_score": "0",
+        "away_scorers": null,
+        "away_team": Object {
+          "id": 16,
+        },
+        "date": "2018-06-16T19:00:00+00:00",
+        "finished": true,
+        "home_score": "2",
+        "home_scorers": "L. Modric 71' O. Etebo 32' ",
+        "home_team": Object {
+          "id": 15,
+        },
+        "id": 8,
+        "loser": null,
+        "matchday": 1,
+        "stadium": Object {
+          "id": 4,
+        },
+        "time_elapsed": "Final",
+        "type": "group",
+        "winner": null,
+      },
+      Object {
+        "away_score": "3",
+        "away_scorers": "I. Rakitic 90'+1' L. Modric 80' A. Rebic 53' ",
+        "away_team": Object {
+          "id": 15,
+        },
+        "date": "2018-06-21T18:00:00+00:00",
+        "finished": true,
+        "home_score": "0",
+        "home_scorers": null,
+        "home_team": Object {
+          "id": 13,
+        },
+        "id": 23,
+        "loser": null,
+        "matchday": 2,
+        "stadium": Object {
+          "id": 6,
+        },
+        "time_elapsed": "Final",
+        "type": "group",
+        "winner": null,
+      },
+      Object {
+        "away_score": "0",
+        "away_scorers": null,
+        "away_team": Object {
+          "id": 14,
+        },
+        "date": "2018-06-22T15:00:00+00:00",
+        "finished": true,
+        "home_score": "2",
+        "home_scorers": "A. Musa 75' A. Musa 49' ",
+        "home_team": Object {
+          "id": 16,
+        },
+        "id": 24,
+        "loser": null,
+        "matchday": 2,
+        "stadium": Object {
+          "id": 8,
+        },
+        "time_elapsed": "Final",
+        "type": "group",
+        "winner": null,
+      },
+      Object {
+        "away_score": "2",
+        "away_scorers": "M. Rojo 86' L. Messi 14' ",
+        "away_team": Object {
+          "id": 13,
+        },
+        "date": "2018-06-26T18:00:00+00:00",
+        "finished": true,
+        "home_score": "1",
+        "home_scorers": "V. Moses 51' ",
+        "home_team": Object {
+          "id": 16,
+        },
+        "id": 39,
+        "loser": null,
+        "matchday": 3,
+        "stadium": Object {
+          "id": 3,
+        },
+        "time_elapsed": "Final",
+        "type": "group",
+        "winner": null,
+      },
+      Object {
+        "away_score": "2",
+        "away_scorers": "I. Perisic 90' M. Badelj 53' ",
+        "away_team": Object {
+          "id": 15,
+        },
+        "date": "2018-06-26T18:00:00+00:00",
+        "finished": true,
+        "home_score": "1",
+        "home_scorers": "Gylfi Sigurdsson 76' ",
+        "home_team": Object {
+          "id": 14,
+        },
+        "id": 40,
+        "loser": null,
+        "matchday": 3,
+        "stadium": Object {
+          "id": 10,
+        },
+        "time_elapsed": "Final",
+        "type": "group",
+        "winner": null,
+      },
+      Object {
+        "away_score": "1",
+        "away_scorers": "S. Zuber 50' ",
+        "away_team": Object {
+          "id": 18,
+        },
+        "date": "2018-06-17T18:00:00+00:00",
+        "finished": true,
+        "home_score": "1",
+        "home_scorers": "Coutinho 20' ",
+        "home_team": Object {
+          "id": 17,
+        },
+        "id": 9,
+        "loser": null,
+        "matchday": 1,
+        "stadium": Object {
+          "id": 10,
+        },
+        "time_elapsed": "Final",
+        "type": "group",
+        "winner": null,
+      },
+      Object {
+        "away_score": "1",
+        "away_scorers": "A. Kolarov 56' ",
+        "away_team": Object {
+          "id": 20,
+        },
+        "date": "2018-06-17T12:00:00+00:00",
+        "finished": true,
+        "home_score": "0",
+        "home_scorers": null,
+        "home_team": Object {
+          "id": 19,
+        },
+        "id": 10,
+        "loser": null,
+        "matchday": 1,
+        "stadium": Object {
+          "id": 7,
+        },
+        "time_elapsed": "Final",
+        "type": "group",
+        "winner": null,
+      },
+      Object {
+        "away_score": "0",
+        "away_scorers": null,
+        "away_team": Object {
+          "id": 19,
+        },
+        "date": "2018-06-22T12:00:00+00:00",
+        "finished": true,
+        "home_score": "2",
+        "home_scorers": "Neymar 90'+7' Coutinho 90'+1' ",
+        "home_team": Object {
+          "id": 17,
+        },
+        "id": 25,
+        "loser": null,
+        "matchday": 2,
+        "stadium": Object {
+          "id": 3,
+        },
+        "time_elapsed": "Final",
+        "type": "group",
+        "winner": null,
+      },
+      Object {
+        "away_score": "2",
+        "away_scorers": "X. Shaqiri 90' G. Xhaka 52' ",
+        "away_team": Object {
+          "id": 18,
+        },
+        "date": "2018-06-22T18:00:00+00:00",
+        "finished": true,
+        "home_score": "1",
+        "home_scorers": "A. Mitrovic 5' ",
+        "home_team": Object {
+          "id": 20,
+        },
+        "id": 26,
+        "loser": null,
+        "matchday": 2,
+        "stadium": Object {
+          "id": 4,
+        },
+        "time_elapsed": "Final",
+        "type": "group",
+        "winner": null,
+      },
+      Object {
+        "away_score": "2",
+        "away_scorers": "Thiago Silva 68' Paulinho 36' ",
+        "away_team": Object {
+          "id": 17,
+        },
+        "date": "2018-06-27T18:00:00+00:00",
+        "finished": true,
+        "home_score": "0",
+        "home_scorers": null,
+        "home_team": Object {
+          "id": 20,
+        },
+        "id": 41,
+        "loser": null,
+        "matchday": 3,
+        "stadium": Object {
+          "id": 2,
+        },
+        "time_elapsed": "Final",
+        "type": "group",
+        "winner": null,
+      },
+      Object {
+        "away_score": "2",
+        "away_scorers": "Y. Sommer 90'+3' K. Waston 56' ",
+        "away_team": Object {
+          "id": 19,
+        },
+        "date": "2018-06-27T18:00:00+00:00",
+        "finished": true,
+        "home_score": "2",
+        "home_scorers": "J. Drmic 88' B. Dzemaili 31' ",
+        "home_team": Object {
+          "id": 18,
+        },
+        "id": 42,
+        "loser": null,
+        "matchday": 3,
+        "stadium": Object {
+          "id": 6,
+        },
+        "time_elapsed": "Final",
+        "type": "group",
+        "winner": null,
+      },
+      Object {
+        "away_score": "1",
+        "away_scorers": "H. Lozano 35' ",
+        "away_team": Object {
+          "id": 22,
+        },
+        "date": "2018-06-17T15:00:00+00:00",
+        "finished": true,
+        "home_score": "0",
+        "home_scorers": null,
+        "home_team": Object {
+          "id": 21,
+        },
+        "id": 11,
+        "loser": null,
+        "matchday": 1,
+        "stadium": Object {
+          "id": 1,
+        },
+        "time_elapsed": "Final",
+        "type": "group",
+        "winner": null,
+      },
+      Object {
+        "away_score": "0",
+        "away_scorers": null,
+        "away_team": Object {
+          "id": 24,
+        },
+        "date": "2018-06-18T12:00:00+00:00",
+        "finished": true,
+        "home_score": "1",
+        "home_scorers": "A. Granqvist 65' ",
+        "home_team": Object {
+          "id": 23,
+        },
+        "id": 12,
+        "loser": null,
+        "matchday": 1,
+        "stadium": Object {
+          "id": 6,
+        },
+        "time_elapsed": "Final",
+        "type": "group",
+        "winner": null,
+      },
+      Object {
+        "away_score": "1",
+        "away_scorers": "O. Toivonen 32' ",
+        "away_team": Object {
+          "id": 23,
+        },
+        "date": "2018-06-23T18:00:00+00:00",
+        "finished": true,
+        "home_score": "2",
+        "home_scorers": "T. Kroos 90'+5' M. Reus 48' ",
+        "home_team": Object {
+          "id": 21,
+        },
+        "id": 27,
+        "loser": null,
+        "matchday": 2,
+        "stadium": Object {
+          "id": 11,
+        },
+        "time_elapsed": "Final",
+        "type": "group",
+        "winner": null,
+      },
+      Object {
+        "away_score": "2",
+        "away_scorers": "Chicharito 66' C. Vela 26' ",
+        "away_team": Object {
+          "id": 22,
+        },
+        "date": "2018-06-23T15:00:00+00:00",
+        "finished": true,
+        "home_score": "1",
+        "home_scorers": "Son Heung-Min 90'+3' ",
+        "home_team": Object {
+          "id": 24,
+        },
+        "id": 28,
+        "loser": null,
+        "matchday": 2,
+        "stadium": Object {
+          "id": 10,
+        },
+        "time_elapsed": "Final",
+        "type": "group",
+        "winner": null,
+      },
+      Object {
+        "away_score": "0",
+        "away_scorers": null,
+        "away_team": Object {
+          "id": 21,
+        },
+        "date": "2018-06-27T14:00:00+00:00",
+        "finished": true,
+        "home_score": "2",
+        "home_scorers": "Son Heung-Min 90'+6' Kim Young-Gwon 90'+2' ",
+        "home_team": Object {
+          "id": 24,
+        },
+        "id": 43,
+        "loser": null,
+        "matchday": 3,
+        "stadium": Object {
+          "id": 5,
+        },
+        "time_elapsed": "Final",
+        "type": "group",
+        "winner": null,
+      },
+      Object {
+        "away_score": "3",
+        "away_scorers": "E. Álvarez 74' A. Granqvist 62' L. Augustinsson 50' ",
+        "away_team": Object {
+          "id": 23,
+        },
+        "date": "2018-06-27T14:00:00+00:00",
+        "finished": true,
+        "home_score": "0",
+        "home_scorers": null,
+        "home_team": Object {
+          "id": 22,
+        },
+        "id": 44,
+        "loser": null,
+        "matchday": 3,
+        "stadium": Object {
+          "id": 12,
+        },
+        "time_elapsed": "Final",
+        "type": "group",
+        "winner": null,
+      },
+      Object {
+        "away_score": "0",
+        "away_scorers": null,
+        "away_team": Object {
+          "id": 26,
+        },
+        "date": "2018-06-18T15:00:00+00:00",
+        "finished": true,
+        "home_score": "3",
+        "home_scorers": "R. Lukaku 75' R. Lukaku 69' D. Mertens 47' ",
+        "home_team": Object {
+          "id": 25,
+        },
+        "id": 13,
+        "loser": null,
+        "matchday": 1,
+        "stadium": Object {
+          "id": 11,
+        },
+        "time_elapsed": "Final",
+        "type": "group",
+        "winner": null,
+      },
+      Object {
+        "away_score": "2",
+        "away_scorers": "H. Kane 90'+1' H. Kane 11' ",
+        "away_team": Object {
+          "id": 28,
+        },
+        "date": "2018-06-18T18:00:00+00:00",
+        "finished": true,
+        "home_score": "1",
+        "home_scorers": "F. Sassi 35' ",
+        "home_team": Object {
+          "id": 27,
+        },
+        "id": 14,
+        "loser": null,
+        "matchday": 1,
+        "stadium": Object {
+          "id": 8,
+        },
+        "time_elapsed": "Final",
+        "type": "group",
+        "winner": null,
+      },
+      Object {
+        "away_score": "2",
+        "away_scorers": "W. Khazri 90'+3' D. Bronn 18' ",
+        "away_team": Object {
+          "id": 27,
+        },
+        "date": "2018-06-23T12:00:00+00:00",
+        "finished": true,
+        "home_score": "5",
+        "home_scorers": "Michy 90' E. Hazard 51' R. Lukaku 45'+3' R. Lukaku 16' E. Hazard 6' ",
+        "home_team": Object {
+          "id": 25,
+        },
+        "id": 29,
+        "loser": null,
+        "matchday": 2,
+        "stadium": Object {
+          "id": 2,
+        },
+        "time_elapsed": "Final",
+        "type": "group",
+        "winner": null,
+      },
+      Object {
+        "away_score": "1",
+        "away_scorers": "F. Baloy 78' ",
+        "away_team": Object {
+          "id": 26,
+        },
+        "date": "2018-06-24T12:00:00+00:00",
+        "finished": true,
+        "home_score": "6",
+        "home_scorers": "H. Kane 62' H. Kane 45'+1' J. Stones 40' J. Lingard 36' H. Kane 22' J. Stones 8' ",
+        "home_team": Object {
+          "id": 28,
+        },
+        "id": 30,
+        "loser": null,
+        "matchday": 2,
+        "stadium": Object {
+          "id": 6,
+        },
+        "time_elapsed": "Final",
+        "type": "group",
+        "winner": null,
+      },
+      Object {
+        "away_score": "1",
+        "away_scorers": "A. Januzaj 51' ",
+        "away_team": Object {
+          "id": 25,
+        },
+        "date": "2018-06-28T18:00:00+00:00",
+        "finished": true,
+        "home_score": "0",
+        "home_scorers": null,
+        "home_team": Object {
+          "id": 28,
+        },
+        "id": 45,
+        "loser": null,
+        "matchday": 3,
+        "stadium": Object {
+          "id": 4,
+        },
+        "time_elapsed": "Final",
+        "type": "group",
+        "winner": null,
+      },
+      Object {
+        "away_score": "2",
+        "away_scorers": "W. Khazri 66' Fakhreddine Ben Yous 51' ",
+        "away_team": Object {
+          "id": 27,
+        },
+        "date": "2018-06-28T18:00:00+00:00",
+        "finished": true,
+        "home_score": "1",
+        "home_scorers": "Y. Meriah 33' (OG) ",
+        "home_team": Object {
+          "id": 26,
+        },
+        "id": 46,
+        "loser": null,
+        "matchday": 3,
+        "stadium": Object {
+          "id": 9,
+        },
+        "time_elapsed": "Final",
+        "type": "group",
+        "winner": null,
+      },
+      Object {
+        "away_score": "2",
+        "away_scorers": "M. Niang 60' Thiago Cionek 37' ",
+        "away_team": Object {
+          "id": 30,
+        },
+        "date": "2018-06-19T15:00:00+00:00",
+        "finished": true,
+        "home_score": "1",
+        "home_scorers": "G. Krychowiak 86' ",
+        "home_team": Object {
+          "id": 29,
+        },
+        "id": 15,
+        "loser": null,
+        "matchday": 1,
+        "stadium": Object {
+          "id": 2,
+        },
+        "time_elapsed": "Final",
+        "type": "group",
+        "winner": null,
+      },
+      Object {
+        "away_score": "2",
+        "away_scorers": "Y. Osako 73' S. Kagawa 6' ",
+        "away_team": Object {
+          "id": 32,
+        },
+        "date": "2018-06-19T12:00:00+00:00",
+        "finished": true,
+        "home_score": "1",
+        "home_scorers": "J. Quintero 39' ",
+        "home_team": Object {
+          "id": 31,
+        },
+        "id": 16,
+        "loser": null,
+        "matchday": 1,
+        "stadium": Object {
+          "id": 9,
+        },
+        "time_elapsed": "Final",
+        "type": "group",
+        "winner": null,
+      },
+      Object {
+        "away_score": "3",
+        "away_scorers": "J. Cuadrado 75' Falcao 70' Y. Mina 40' ",
+        "away_team": Object {
+          "id": 31,
+        },
+        "date": "2018-06-24T18:00:00+00:00",
+        "finished": true,
+        "home_score": "0",
+        "home_scorers": null,
+        "home_team": Object {
+          "id": 29,
+        },
+        "id": 31,
+        "loser": null,
+        "matchday": 2,
+        "stadium": Object {
+          "id": 5,
+        },
+        "time_elapsed": "Final",
+        "type": "group",
+        "winner": null,
+      },
+      Object {
+        "away_score": "2",
+        "away_scorers": "M. Wagué 71' S. Mané 11' ",
+        "away_team": Object {
+          "id": 30,
+        },
+        "date": "2018-06-24T15:00:00+00:00",
+        "finished": true,
+        "home_score": "2",
+        "home_scorers": "K. Honda 78' T. Inui 34' ",
+        "home_team": Object {
+          "id": 32,
+        },
+        "id": 32,
+        "loser": null,
+        "matchday": 2,
+        "stadium": Object {
+          "id": 12,
+        },
+        "time_elapsed": "Final",
+        "type": "group",
+        "winner": null,
+      },
+      Object {
+        "away_score": "1",
+        "away_scorers": "J. Bednarek 59' ",
+        "away_team": Object {
+          "id": 29,
+        },
+        "date": "2018-06-28T14:00:00+00:00",
+        "finished": true,
+        "home_score": "0",
+        "home_scorers": null,
+        "home_team": Object {
+          "id": 32,
+        },
+        "id": 47,
+        "loser": null,
+        "matchday": 3,
+        "stadium": Object {
+          "id": 8,
+        },
+        "time_elapsed": "Final",
+        "type": "group",
+        "winner": null,
+      },
+      Object {
+        "away_score": "1",
+        "away_scorers": "Y. Mina 74' ",
+        "away_team": Object {
+          "id": 31,
+        },
+        "date": "2018-06-28T14:00:00+00:00",
+        "finished": true,
+        "home_score": "0",
+        "home_scorers": null,
+        "home_team": Object {
+          "id": 30,
+        },
+        "id": 48,
+        "loser": null,
+        "matchday": 3,
+        "stadium": Object {
+          "id": 7,
+        },
+        "time_elapsed": "Final",
+        "type": "group",
+        "winner": null,
+      },
+      Object {
+        "away_score": "1",
+        "away_scorers": "Pepe 55' ",
+        "away_team": Object {
+          "id": 5,
+        },
+        "date": "2018-06-30T18:00:00+00:00",
+        "finished": true,
+        "home_score": "2",
+        "home_scorers": "E. Cavani 62' E. Cavani 7' ",
+        "home_team": Object {
+          "id": 4,
+        },
+        "id": 49,
+        "loser": "Portugal",
+        "matchday": 4,
+        "stadium": Object {
+          "id": 11,
+        },
+        "time_elapsed": "Final",
+        "type": "qualified",
+        "winner": "Uruguay",
+      },
+      Object {
+        "away_score": "3",
+        "away_scorers": "S. Agüero 90'+3' G. Mercado 48' Á. Di María 41' ",
+        "away_team": Object {
+          "id": 13,
+        },
+        "date": "2018-06-30T14:00:00+00:00",
+        "finished": true,
+        "home_score": "4",
+        "home_scorers": "K. Mbappé 68' K. Mbappé 64' B. Pavard 57' A. Griezmann 13' (P) ",
+        "home_team": Object {
+          "id": 9,
+        },
+        "id": 50,
+        "loser": "Argentina",
+        "matchday": 4,
+        "stadium": Object {
+          "id": 5,
+        },
+        "time_elapsed": "Final",
+        "type": "qualified",
+        "winner": "France",
+      },
+      Object {
+        "away_score": "1",
+        "away_scorers": "A. Dzyuba 41' (P) ",
+        "away_team": Object {
+          "id": 1,
+        },
+        "date": "2018-07-01T14:00:00+00:00",
+        "finished": true,
+        "home_score": "1",
+        "home_scorers": "S. Ignashevich 12' (OG) ",
+        "home_team": Object {
+          "id": 6,
+        },
+        "id": 51,
+        "loser": "Spain",
+        "matchday": 4,
+        "stadium": Object {
+          "id": 1,
+        },
+        "time_elapsed": "Final",
+        "type": "qualified",
+        "winner": "Russia",
+      },
+      Object {
+        "away_score": "1",
+        "away_scorers": "Zanka 1' ",
+        "away_team": Object {
+          "id": 12,
+        },
+        "date": "2018-07-01T18:00:00+00:00",
+        "finished": true,
+        "home_score": "1",
+        "home_scorers": "M. Mandzukic 4' ",
+        "home_team": Object {
+          "id": 15,
+        },
+        "id": 52,
+        "loser": "Denmark",
+        "matchday": 4,
+        "stadium": Object {
+          "id": 6,
+        },
+        "time_elapsed": "Final",
+        "type": "qualified",
+        "winner": "Croatia",
+      },
+      Object {
+        "away_score": "0",
+        "away_scorers": null,
+        "away_team": Object {
+          "id": 22,
+        },
+        "date": "2018-07-02T14:00:00+00:00",
+        "finished": true,
+        "home_score": "2",
+        "home_scorers": "Roberto Firmino 88' Neymar 51' ",
+        "home_team": Object {
+          "id": 17,
+        },
+        "id": 53,
+        "loser": "Mexico",
+        "matchday": 4,
+        "stadium": Object {
+          "id": 7,
+        },
+        "time_elapsed": "Final",
+        "type": "qualified",
+        "winner": "Brazil",
+      },
+      Object {
+        "away_score": "2",
+        "away_scorers": "T. Inui 52' G. Haraguchi 48' ",
+        "away_team": Object {
+          "id": 32,
+        },
+        "date": "2018-07-02T18:00:00+00:00",
+        "finished": true,
+        "home_score": "3",
+        "home_scorers": "N. Chadli 90'+4' M. Fellaini 74' J. Vertonghen 69' ",
+        "home_team": Object {
+          "id": 25,
+        },
+        "id": 54,
+        "loser": "Japan",
+        "matchday": 4,
+        "stadium": Object {
+          "id": 10,
+        },
+        "time_elapsed": "Final",
+        "type": "qualified",
+        "winner": "Belgium",
+      },
+      Object {
+        "away_score": "0",
+        "away_scorers": null,
+        "away_team": Object {
+          "id": 18,
+        },
+        "date": "2018-07-03T14:00:00+00:00",
+        "finished": true,
+        "home_score": "1",
+        "home_scorers": "E. Forsberg 66' ",
+        "home_team": Object {
+          "id": 23,
+        },
+        "id": 55,
+        "loser": "Switzerland",
+        "matchday": 4,
+        "stadium": Object {
+          "id": 3,
+        },
+        "time_elapsed": "Final",
+        "type": "qualified",
+        "winner": "Sweden",
+      },
+      Object {
+        "away_score": "1",
+        "away_scorers": "H. Kane 57' (P) ",
+        "away_team": Object {
+          "id": 28,
+        },
+        "date": "2018-07-03T18:00:00+00:00",
+        "finished": true,
+        "home_score": "1",
+        "home_scorers": "Y. Mina 90'+3' ",
+        "home_team": Object {
+          "id": 31,
+        },
+        "id": 56,
+        "loser": "Colombia",
+        "matchday": 4,
+        "stadium": Object {
+          "id": 2,
+        },
+        "time_elapsed": "Final",
+        "type": "qualified",
+        "winner": "England",
+      },
+      Object {
+        "away_score": "2",
+        "away_scorers": "A. Griezmann 61' R. Varane 40' ",
+        "away_team": Object {
+          "id": 9,
+        },
+        "date": "2018-07-06T14:00:00+00:00",
+        "finished": true,
+        "home_score": "0",
+        "home_scorers": null,
+        "home_team": Object {
+          "id": 4,
+        },
+        "id": 57,
+        "loser": "Uruguay",
+        "matchday": 5,
+        "stadium": Object {
+          "id": 6,
+        },
+        "time_elapsed": "Final",
+        "type": "winner",
+        "winner": "France",
+      },
+      Object {
+        "away_score": "2",
+        "away_scorers": "K. De Bruyne 31' Fernandinho 13' (OG) ",
+        "away_team": Object {
+          "id": 25,
+        },
+        "date": "2018-07-06T18:00:00+00:00",
+        "finished": true,
+        "home_score": "1",
+        "home_scorers": "Renato Augusto 76' ",
+        "home_team": Object {
+          "id": 17,
+        },
+        "id": 58,
+        "loser": "Brazil",
+        "matchday": 5,
+        "stadium": Object {
+          "id": 5,
+        },
+        "time_elapsed": "Final",
+        "type": "winner",
+        "winner": "Belgium",
+      },
+      Object {
+        "away_score": "2",
+        "away_scorers": "D. Vida 100' A. Kramaric 39' ",
+        "away_team": Object {
+          "id": 15,
+        },
+        "date": "2018-07-07T18:00:00+00:00",
+        "finished": true,
+        "home_score": "2",
+        "home_scorers": "Mario Fernandes 115' D. Cheryshev 31' ",
+        "home_team": Object {
+          "id": 1,
+        },
+        "id": 59,
+        "loser": "Russia",
+        "matchday": 5,
+        "stadium": Object {
+          "id": 11,
+        },
+        "time_elapsed": "Final",
+        "type": "winner",
+        "winner": "Croatia",
+      },
+      Object {
+        "away_score": "2",
+        "away_scorers": "Dele Alli 58' H. Maguire 30' ",
+        "away_team": Object {
+          "id": 28,
+        },
+        "date": "2018-07-07T14:00:00+00:00",
+        "finished": true,
+        "home_score": "0",
+        "home_scorers": null,
+        "home_team": Object {
+          "id": 23,
+        },
+        "id": 60,
+        "loser": "Sweden",
+        "matchday": 5,
+        "stadium": Object {
+          "id": 7,
+        },
+        "time_elapsed": "Final",
+        "type": "winner",
+        "winner": "England",
+      },
+      Object {
+        "away_score": "0",
+        "away_scorers": null,
+        "away_team": Object {
+          "id": 25,
+        },
+        "date": "2018-07-10T18:00:00+00:00",
+        "finished": true,
+        "home_score": "1",
+        "home_scorers": "S. Umtiti 51' ",
+        "home_team": Object {
+          "id": 9,
+        },
+        "id": 61,
+        "loser": "Belgium",
+        "matchday": 6,
+        "stadium": Object {
+          "id": 3,
+        },
+        "time_elapsed": "Final",
+        "type": "winner",
+        "winner": "France",
+      },
+      Object {
+        "away_score": "1",
+        "away_scorers": "K. Trippier 5' ",
+        "away_team": Object {
+          "id": 28,
+        },
+        "date": "2018-07-11T18:00:00+00:00",
+        "finished": true,
+        "home_score": "2",
+        "home_scorers": "M. Mandzukic 109' I. Perisic 68' ",
+        "home_team": Object {
+          "id": 15,
+        },
+        "id": 62,
+        "loser": "England",
+        "matchday": 6,
+        "stadium": Object {
+          "id": 1,
+        },
+        "time_elapsed": "Final",
+        "type": "winner",
+        "winner": "Croatia",
+      },
+      Object {
+        "away_score": "0",
+        "away_scorers": null,
+        "away_team": Object {
+          "id": 28,
+        },
+        "date": "2018-07-14T14:00:00+00:00",
+        "finished": true,
+        "home_score": "2",
+        "home_scorers": "E. Hazard 82' T. Meunier 4' ",
+        "home_team": Object {
+          "id": 25,
+        },
+        "id": 63,
+        "loser": "England",
+        "matchday": 7,
+        "stadium": Object {
+          "id": 3,
+        },
+        "time_elapsed": "Final",
+        "type": "loser",
+        "winner": "Belgium",
+      },
+      Object {
+        "away_score": "2",
+        "away_scorers": "M. Mandzukic 69' I. Perisic 28' ",
+        "away_team": Object {
+          "id": 15,
+        },
+        "date": "2018-07-15T15:00:00+00:00",
+        "finished": true,
+        "home_score": "4",
+        "home_scorers": "K. Mbappé 65' P. Pogba 59' A. Griezmann 38' (P) M. Mandzukic 18' (OG) ",
+        "home_team": Object {
+          "id": 9,
+        },
+        "id": 64,
+        "loser": "Croatia",
+        "matchday": 7,
+        "stadium": Object {
+          "id": 1,
+        },
+        "time_elapsed": "Final",
+        "type": "winner",
+        "winner": "France",
+      },
+    ],
+  },
+  "errors": undefined,
   "extensions": undefined,
   "http": Object {
     "headers": Headers {
@@ -162,11 +1819,143 @@ Object {
 
 exports[`Queries fetches list of stadiums 1`] = `
 Object {
-  "data": undefined,
-  "errors": Array [
-    [ValidationError: Cannot query field "lat" on type "Stadium".],
-    [ValidationError: Cannot query field "lng" on type "Stadium".],
-  ],
+  "data": Object {
+    "stadiums": Array [
+      Object {
+        "city": "Moscow",
+        "id": 1,
+        "image": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Luzhniki_Stadium%2C_Moscow.jpg",
+        "last_played": Object {
+          "id": 64,
+        },
+        "latitude": 55.715765,
+        "longitude": 37.5515217,
+        "name": "Luzhniki Stadium",
+      },
+      Object {
+        "city": "Moscow",
+        "id": 2,
+        "image": "https://upload.wikimedia.org/wikipedia/commons/5/50/Stadium_Spartak_in_Moscow.jpg",
+        "last_played": Object {
+          "id": 56,
+        },
+        "latitude": 55.817765,
+        "longitude": 37.440363,
+        "name": "Otkrytiye Arena",
+      },
+      Object {
+        "city": "Saint Petersburg",
+        "id": 3,
+        "image": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Spb_06-2017_img40_Krestovsky_Stadium.jpg",
+        "last_played": Object {
+          "id": 63,
+        },
+        "latitude": 59.97274,
+        "longitude": 30.221408,
+        "name": "Krestovsky Stadium",
+      },
+      Object {
+        "city": "Kaliningrad",
+        "id": 4,
+        "image": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Kaliningrad_stadium_-_2018-04-07.jpg",
+        "last_played": Object {
+          "id": 45,
+        },
+        "latitude": 54.698157,
+        "longitude": 20.533859,
+        "name": "Kaliningrad Stadium",
+      },
+      Object {
+        "city": "Kazan",
+        "id": 5,
+        "image": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Kazan_Arena_08-2016.jpg",
+        "last_played": Object {
+          "id": 58,
+        },
+        "latitude": 55.820983,
+        "longitude": 49.160966,
+        "name": "Kazan Arena",
+      },
+      Object {
+        "city": "Nizhny Novgorod",
+        "id": 6,
+        "image": "https://upload.wikimedia.org/wikipedia/commons/9/90/Nizhny_Novgorod_Stadium_%28March_2018%29.jpg",
+        "last_played": Object {
+          "id": 57,
+        },
+        "latitude": 56.337287,
+        "longitude": 43.963251,
+        "name": "Nizhny Novgorod Stadium",
+      },
+      Object {
+        "city": "Samara",
+        "id": 7,
+        "image": "http://img.fifa.com/image/upload/t_l4/d0mymt1ubl2pypmu3gn3.jpg",
+        "last_played": Object {
+          "id": 60,
+        },
+        "latitude": 53.278146,
+        "longitude": 50.238854,
+        "name": "Cosmos Arena",
+      },
+      Object {
+        "city": "Volgograd",
+        "id": 8,
+        "image": "https://upload.wikimedia.org/wikipedia/commons/6/61/Construction_of_Volgograd_Arena_inside_04.jpg",
+        "last_played": Object {
+          "id": 47,
+        },
+        "latitude": 48.734195,
+        "longitude": 44.548345,
+        "name": "Volgograd Arena",
+      },
+      Object {
+        "city": "Saransk",
+        "id": 9,
+        "image": "https://upload.wikimedia.org/wikipedia/commons/c/c9/%D0%A1%D1%82%D0%B0%D0%B4%D0%B8%D0%BE%D0%BD_Mordovia_arena.jpg",
+        "last_played": Object {
+          "id": 46,
+        },
+        "latitude": 54.181795,
+        "longitude": 45.203851,
+        "name": "Mordovia Arena",
+      },
+      Object {
+        "city": "Rostov-on-Don",
+        "id": 10,
+        "image": "https://upload.wikimedia.org/wikipedia/commons/9/94/Rostov-Arens_%28april_2018%29_01.jpg",
+        "last_played": Object {
+          "id": 54,
+        },
+        "latitude": 47.209581,
+        "longitude": 39.738424,
+        "name": "Rostov Arena",
+      },
+      Object {
+        "city": "Sochi",
+        "id": 11,
+        "image": "https://upload.wikimedia.org/wikipedia/commons/5/55/Fisht_Stadium_in_January_2018.jpg",
+        "last_played": Object {
+          "id": 59,
+        },
+        "latitude": 43.402011,
+        "longitude": 39.955709,
+        "name": "Fisht Olympic Stadium",
+      },
+      Object {
+        "city": "Yekaterinburg",
+        "id": 12,
+        "image": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Estadio_Central_%28Ekaterinburg-arena%29.jpg",
+        "last_played": Object {
+          "id": 44,
+        },
+        "latitude": 56.83249,
+        "longitude": 60.573585,
+        "name": "Central Stadium",
+      },
+    ],
+  },
+  "errors": undefined,
   "extensions": undefined,
   "http": Object {
     "headers": Headers {
@@ -178,11 +1967,267 @@ Object {
 
 exports[`Queries fetches list of teams 1`] = `
 Object {
-  "data": undefined,
-  "errors": Array [
-    [ValidationError: Cannot query field "fifaCode" on type "Team".],
-    [ValidationError: Cannot query field "emojiString" on type "Team". Did you mean "emoji_string"?],
-  ],
+  "data": Object {
+    "teams": Array [
+      Object {
+        "emoji": "flag-ru",
+        "emoji_string": "🇷🇺",
+        "flag": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f3/Flag_of_Russia.svg/900px-Flag_of_Russia.png",
+        "id": 1,
+        "iso2": "ru",
+        "name": "Russia",
+      },
+      Object {
+        "emoji": "flag-sa",
+        "emoji_string": "🇸🇦",
+        "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Flag_of_Saudi_Arabia.svg/750px-Flag_of_Saudi_Arabia.png",
+        "id": 2,
+        "iso2": "sa",
+        "name": "Saudi Arabia",
+      },
+      Object {
+        "emoji": "flag-eg",
+        "emoji_string": "🇪🇬",
+        "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Flag_of_Egypt.svg/900px-Flag_of_Egypt.png",
+        "id": 3,
+        "iso2": "eg",
+        "name": "Egypt",
+      },
+      Object {
+        "emoji": "flag-uy",
+        "emoji_string": "🇺🇾",
+        "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Flag_of_Uruguay.svg/900px-Flag_of_Uruguay.png",
+        "id": 4,
+        "iso2": "uy",
+        "name": "Uruguay",
+      },
+      Object {
+        "emoji": "flag-pt",
+        "emoji_string": "🇵🇹",
+        "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_Portugal.svg/600px-Flag_of_Portugal.png",
+        "id": 5,
+        "iso2": "pt",
+        "name": "Portugal",
+      },
+      Object {
+        "emoji": "flag-es",
+        "emoji_string": "🇪🇸",
+        "flag": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9a/Flag_of_Spain.svg/750px-Flag_of_Spain.png",
+        "id": 6,
+        "iso2": "es",
+        "name": "Spain",
+      },
+      Object {
+        "emoji": "flag-ma",
+        "emoji_string": "🇲🇦",
+        "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Flag_of_Morocco.svg/900px-Flag_of_Morocco.png",
+        "id": 7,
+        "iso2": "ma",
+        "name": "Morocco",
+      },
+      Object {
+        "emoji": "flag-ir",
+        "emoji_string": "🇮🇷",
+        "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Flag_of_Iran.svg/630px-Flag_of_Iran.png",
+        "id": 8,
+        "iso2": "ir",
+        "name": "Iran",
+      },
+      Object {
+        "emoji": "flag-fr",
+        "emoji_string": "🇫🇷",
+        "flag": "https://upload.wikimedia.org/wikipedia/en/thumb/c/c3/Flag_of_France.svg/900px-Flag_of_France.png",
+        "id": 9,
+        "iso2": "fr",
+        "name": "France",
+      },
+      Object {
+        "emoji": "flag-au",
+        "emoji_string": "🇦🇺",
+        "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Flag_of_Australia_%28converted%29.svg/1280px-Flag_of_Australia_%28converted%29.png",
+        "id": 10,
+        "iso2": "au",
+        "name": "Australia",
+      },
+      Object {
+        "emoji": "flag-pe",
+        "emoji_string": "🇵🇪",
+        "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Flag_of_Peru_%28state%29.svg/900px-Flag_of_Peru_%28state%29.png",
+        "id": 11,
+        "iso2": "pe",
+        "name": "Peru",
+      },
+      Object {
+        "emoji": "flag-dk",
+        "emoji_string": "🇩🇰",
+        "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Flag_of_Denmark.svg/740px-Flag_of_Denmark.png",
+        "id": 12,
+        "iso2": "dk",
+        "name": "Denmark",
+      },
+      Object {
+        "emoji": "flag-ar",
+        "emoji_string": "🇦🇷",
+        "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Flag_of_Argentina.svg/800px-Flag_of_Argentina.png",
+        "id": 13,
+        "iso2": "ar",
+        "name": "Argentina",
+      },
+      Object {
+        "emoji": "flag-is",
+        "emoji_string": "🇮🇸",
+        "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Flag_of_Iceland.svg/800px-Flag_of_Iceland.png",
+        "id": 14,
+        "iso2": "is",
+        "name": "Iceland",
+      },
+      Object {
+        "emoji": "flag-hr",
+        "emoji_string": "🇭🇷",
+        "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Flag_of_Croatia.svg/800px-Flag_of_Croatia.png",
+        "id": 15,
+        "iso2": "hr",
+        "name": "Croatia",
+      },
+      Object {
+        "emoji": "flag-ng",
+        "emoji_string": "🇳🇬",
+        "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Flag_of_Nigeria.svg/800px-Flag_of_Nigeria.png",
+        "id": 16,
+        "iso2": "ng",
+        "name": "Nigeria",
+      },
+      Object {
+        "emoji": "flag-br",
+        "emoji_string": "🇧🇷",
+        "flag": "https://upload.wikimedia.org/wikipedia/en/thumb/0/05/Flag_of_Brazil.svg/720px-Flag_of_Brazil.png",
+        "id": 17,
+        "iso2": "br",
+        "name": "Brazil",
+      },
+      Object {
+        "emoji": "flag-ch",
+        "emoji_string": "🇨🇭",
+        "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Flag_of_Switzerland_%28Pantone%29.svg/320px-Flag_of_Switzerland_%28Pantone%29.png",
+        "id": 18,
+        "iso2": "ch",
+        "name": "Switzerland",
+      },
+      Object {
+        "emoji": "flag-cr",
+        "emoji_string": "🇨🇷",
+        "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Flag_of_Costa_Rica_%28state%29.svg/833px-Flag_of_Costa_Rica_%28state%29.png",
+        "id": 19,
+        "iso2": "cr",
+        "name": "Costa Rica",
+      },
+      Object {
+        "emoji": "flag-rs",
+        "emoji_string": "🇷🇸",
+        "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Flag_of_Serbia.svg/1350px-Flag_of_Serbia.png",
+        "id": 20,
+        "iso2": "rs",
+        "name": "Serbia",
+      },
+      Object {
+        "emoji": "flag-de",
+        "emoji_string": "🇩🇪",
+        "flag": "https://upload.wikimedia.org/wikipedia/en/thumb/b/ba/Flag_of_Germany.svg/800px-Flag_of_Germany.png",
+        "id": 21,
+        "iso2": "de",
+        "name": "Germany",
+      },
+      Object {
+        "emoji": "flag-mx",
+        "emoji_string": "🇲🇽",
+        "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Flag_of_Mexico.svg/800px-Flag_of_Mexico.png",
+        "id": 22,
+        "iso2": "mx",
+        "name": "Mexico",
+      },
+      Object {
+        "emoji": "flag-se",
+        "emoji_string": "🇸🇪",
+        "flag": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4c/Flag_of_Sweden.svg/1600px-Flag_of_Sweden.png",
+        "id": 23,
+        "iso2": "se",
+        "name": "Sweden",
+      },
+      Object {
+        "emoji": "flag-kr",
+        "emoji_string": "🇰🇷",
+        "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Flag_of_South_Korea.svg/900px-Flag_of_South_Korea.png",
+        "id": 24,
+        "iso2": "kr",
+        "name": "South Korea",
+      },
+      Object {
+        "emoji": "flag-be",
+        "emoji_string": "🇧🇪",
+        "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Flag_of_Belgium.svg/450px-Flag_of_Belgium.png",
+        "id": 25,
+        "iso2": "be",
+        "name": "Belgium",
+      },
+      Object {
+        "emoji": "flag-pa",
+        "emoji_string": "🇵🇦",
+        "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Flag_of_Panama.svg/450px-Flag_of_Panama.png",
+        "id": 26,
+        "iso2": "pa",
+        "name": "Panama",
+      },
+      Object {
+        "emoji": "flag-tn",
+        "emoji_string": "🇹🇳",
+        "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Flag_of_Tunisia.svg/1200px-Flag_of_Tunisia.png",
+        "id": 27,
+        "iso2": "tn",
+        "name": "Tunisia",
+      },
+      Object {
+        "emoji": "flag-england",
+        "emoji_string": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+        "flag": "https://upload.wikimedia.org/wikipedia/en/thumb/b/be/Flag_of_England.svg/800px-Flag_of_England.png",
+        "id": 28,
+        "iso2": "gb-eng",
+        "name": "England",
+      },
+      Object {
+        "emoji": "flag-pl",
+        "emoji_string": "🇵🇱",
+        "flag": "https://upload.wikimedia.org/wikipedia/en/thumb/1/12/Flag_of_Poland.svg/1280px-Flag_of_Poland.png",
+        "id": 29,
+        "iso2": "pl",
+        "name": "Poland",
+      },
+      Object {
+        "emoji": "flag-sn",
+        "emoji_string": "🇸🇳",
+        "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Flag_of_Senegal.svg/900px-Flag_of_Senegal.svg.png",
+        "id": 30,
+        "iso2": "sn",
+        "name": "Senegal",
+      },
+      Object {
+        "emoji": "flag-co",
+        "emoji_string": "🇨🇴",
+        "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Colombia.svg/450px-Flag_of_Colombia.png",
+        "id": 31,
+        "iso2": "co",
+        "name": "Colombia",
+      },
+      Object {
+        "emoji": "flag-jp",
+        "emoji_string": "🇯🇵",
+        "flag": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9e/Flag_of_Japan.svg/900px-Flag_of_Japan.png",
+        "id": 32,
+        "iso2": "jp",
+        "name": "Japan",
+      },
+    ],
+  },
+  "errors": undefined,
   "extensions": undefined,
   "http": Object {
     "headers": Headers {

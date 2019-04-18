@@ -2,6 +2,7 @@ const { ApolloServer } = require('apollo-server');
 
 const typeDefs = require('../graphql/schemas');
 const resolvers = require('../graphql/resolvers');
+const db = require('../graphql/db');
 const gql = require('graphql-tag');
 
 
@@ -16,8 +17,8 @@ const constructTestServer = () => {
 module.exports.constructTestServer = constructTestServer;
 
 const GET_MATCHES = gql`
-  query match {
-    match{
+  query matches {
+    matches {
       id
       type
       home_team {
@@ -26,34 +27,31 @@ const GET_MATCHES = gql`
       away_team {
         id
       }
-      home_result
-      away_result
-      home_penalty
-      away_penalty
-      winner {
-        id
-      }
+      home_score
+      away_score
+      home_scorers
+      away_scorers
       date
       stadium {
         id
       }
-      channels {
-        id
-      }
+      time_elapsed
       finished
       matchday
+      winner
+      loser
     }
   }
 `;
 
 const GET_STADIUMS = gql`
-  query stadium {
-    stadium {
+  query stadiums {
+    stadiums {
       id
       name
       city
-      lat
-      lng
+      latitude
+      longitude
       image
       last_played {
         id
@@ -63,35 +61,21 @@ const GET_STADIUMS = gql`
 `;
 
 const GET_TEAMS = gql`
-  query team {
-    team{
+  query teams {
+    teams {
       id
       name
-      fifaCode
       iso2
       flag
       emoji
-      emojiString
-    }
-  }
-`;
-
-const GET_CHANNELS = gql`
-  query channel {
-    channel{
-      id
-      name
-      icon
-      country
-      iso2
-      lang
+      emoji_string
     }
   }
 `;
 
 const GET_GROUPS = gql`
-  query group {
-    group{
+  query groups {
+    groups{
       name
       winner {
         id
@@ -110,8 +94,8 @@ const GET_GROUPS = gql`
 `;
 
 const GET_KNOCKOUTS = gql`
-  query knockout {
-    knockout{
+  query knockouts {
+    knockouts{
       name
       matches {
         id
@@ -124,7 +108,6 @@ module.exports.queries = {
   GET_MATCHES,
   GET_STADIUMS,
   GET_TEAMS,
-  GET_CHANNELS,
   GET_GROUPS,
   GET_KNOCKOUTS
 };
