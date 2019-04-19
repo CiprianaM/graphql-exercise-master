@@ -1,7 +1,6 @@
 const { createTestClient } = require('apollo-server-testing');
 const { constructTestServer, queries } = require('./__utils');
-const { GET_MATCHES, GET_STADIUMS, GET_TEAMS, GET_CHANNELS, GET_GROUPS, GET_KNOCKOUTS } = queries;
-
+const { GET_MATCHES, GET_STADIUMS, GET_TEAMS, GET_GROUPS, GET_KNOCKOUTS } = queries;
 
 describe('Queries', () => {
   const server = constructTestServer();
@@ -20,11 +19,6 @@ describe('Queries', () => {
 
   it('fetches list of teams', async () => {
     res = await query({query: GET_TEAMS});
-    expect(res).toMatchSnapshot();
-  });
-
-  it('fetches list of channels', async () => {
-    res = await query({query: GET_CHANNELS});
     expect(res).toMatchSnapshot();
   });
 
