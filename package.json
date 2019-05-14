@@ -1,6 +1,6 @@
 {
   "name": "codeworks-graphql-exercise-master",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "A Codeworks exercise to train students",
   "main": "index.js",
   "repository": {
