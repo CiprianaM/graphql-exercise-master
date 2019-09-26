@@ -5,7 +5,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "codeworksbcn/graphql-exercise-master"
+    "url": "codeworks/graphql-exercise-master"
   },
   "author": "Codeworks",
   "license": "UNLICENSED",
@@ -31,7 +31,6 @@
   },
   "scripts": {
     "dev": "nodemon src/REMOVE/index.js",
-    "precommit": "gulp lint",
     "start": "node src/REMOVE/index.js",
     "test": "jest"
   },
@@ -44,5 +43,10 @@
     "testPathIgnorePatterns": [
       "/__utils"
     ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "gulp lint"
+    }
   }
 }
